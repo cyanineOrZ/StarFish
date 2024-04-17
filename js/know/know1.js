@@ -1,0 +1,6 @@
+var btn1 = document.getElementById("btn1")
+var btn2 = document.getElementById("btn2")
+var btn3 = document.getElementById("btn3")
+var con1 = document.getElementById("con1")
+var con2 = document.getElementById("con2")
+var con3 = document.getElementById("con3")

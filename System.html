@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/system/decoration.css">
+    <link rel="stylesheet" href="css/system/NavDiv.css">
+    <link rel="stylesheet" href="css/system/tableDiv.css">
+    <link rel="stylesheet" href="css/system/tableOther.css">
+    <link rel="stylesheet" href="css/system/adddiv.css">
+</head>
+<body class="body">
+    <!-- 增加公司信息 -->
+    <div class="adddiv" id="CompanyForm">
+        <div class="text">新增公司信息</div>
+        <form class="form">
+                <p>公司编号</p>
+                <input type="text" name="" id="CompanyId">
+                <p>公司名称</p>
+                <input type="text" name="" id="CompanyName">
+                <p>公司成立日期</p>
+                <input type="text" name="" id="CompanyEstablisherTime">
+                <p>备注</p>
+                <input type="text" name="" id="CompanyMenberNumber">
+            </tr>
+            <div class="divisionLine"></div>
+        </form>
+        <button class="cancelButton" id="CompanycancelButton">取消</button>
+        <button class="submitButton" id="CompanysubmitButton">确定</button>
+    </div>
+    <!-- 修改公司信息 -->
+    <div class="modifydiv" id="modifyCompanyForm">
+        <div class="text">修改公司信息</div>
+        <table>
+            <tr>
+                <td>公司编号</td>
+                <td><input type="text" id="modifyCompanyId" /></td>
+            </tr>
+            <tr>
+                <td>公司名称</td>
+                <td><input type="text" id="modifyCompanyName" /></td>
+            </tr>
+            <tr>
+                <td>公司成立日期</td>
+                <td><input type="text" id="modifyCompanyEstablisherTime" /></td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td><input type="text" id="modifyCompanyMenberNumber" /></td>
+            </tr>
+        </table>
+        <div class="divisionLine"></div>
+        <button class="cancelButton" id="ModifyCompanycancelButton">取消</button>
+        <button class="submitButton" id="ModifyCompanysubmitButton">确定</button>
+    </div>
+    <!-- 增加员工信息 -->
+    <div class="adddiv" id="MemberForm">
+        <div class="text">新增员工信息</div>
+        <form class="form">
+                <p>成员编号</p>
+                <input type="text" name="" id="MemberId">
+                <p>姓名</p>
+                <input type="text" name="" id="MemberName">
+                <p>性别</p>
+                <input type="text" name="" id="MenberSex">
+                <p>角色</p>
+                <input type="text" name="" id="MenberRole">
+                <p>进团日期</p>
+                <input type="text" name="" id="MemberJoinDate">
+                <p>备注</p>
+                <input type="text" name="" id="MemberNote">
+            </tr>
+            <div class="divisionLine"></div>
+        </form>
+        <button class="cancelButton" id="MembercancelButton">取消</button>
+        <button class="submitButton" id="MembersubmitButton">确定</button>
+    </div>
+    <!-- 修改员工信息 -->
+    <div class="modifydiv" id="modifyMemberForm">
+        <div class="text">修改员工信息</div>
+        <table>
+            <tr>
+                <td>成员编号</td>
+                <td><input type="text" id="modifyMemberId" /></td>
+            </tr>
+            <tr>
+                <td>姓名</td>
+                <td><input type="text" id="modifyMemberName" /></td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td><input type="text" id="modifyMenberSex" /></td>
+            </tr>
+            <tr>
+                <td>角色</td>
+                <td><input type="text" id="modifyMenberRole" /></td>
+            </tr>
+            <tr>
+                <td>进团日期</td>
+                <td><input type="text" id="modifyMemberJoinDate" /></td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td><input type="text" id="modifyMemberNote" /></td>
+            </tr>
+        </table>
+        <div class="divisionLine"></div>
+        <button class="cancelButton" id="ModifyMembercancelButton">取消</button>
+        <button class="submitButton" id="ModifyMembersubmitButton">确定</button>
+    </div>
+    <!-- 增加奖惩信息 -->
+    <div class="adddiv" id="RewardsForm">
+        <div class="text">新增奖惩信息</div>
+        <form class="form">
+                <p>奖惩编号</p>
+                <input type="text" name="" id="RewardsId">
+                <p>奖惩成员编号</p>
+                <input type="text" name="" id="RewardsMemberId">
+                <p>奖惩日期</p>
+                <input type="text" name="" id="RewardsDate">
+                <p>奖惩原因</p>
+                <input type="text" name="" id="RewardsReason">
+                <p>备注</p>
+                <input type="text" name="" id="RewardsNote">
+            </tr>
+            <div class="divisionLine"></div>
+        </form>
+        <button class="cancelButton" id="RewardscancelButton">取消</button>
+        <button class="submitButton" id="RewardssubmitButton">确定</button>
+    </div>
+    <!-- 修改奖惩信息 -->
+    <div class="modifydiv" id="modifyRewardForm">
+        <div class="text">修改奖惩信息</div>
+        <table>
+            <tr>
+                <td>奖惩序号</td>
+                <td><input type="text" id="modifyRewardId" /></td>
+            </tr>
+            <tr>
+                <td>奖惩成员编号</td>
+                <td><input type="text" id="modifyRewardMemberId" /></td>
+            </tr>
+            <tr>
+                <td>奖惩日期</td>
+                <td><input type="text" id="modifyRewardDate" /></td>
+            </tr>
+            <tr>
+                <td>奖惩原因</td>
+                <td><input type="text" id="modifyRewardsReason" /></td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td><input type="text" id="modifyRewardsNote" /></td>
+            </tr>
+        </table>
+        <div class="divisionLine"></div>
+        <button class="cancelButton" id="ModifyRewardcancelButton">取消</button>
+        <button class="submitButton" id="ModifyRewardsubmitButton">确定</button>
+    </div>
+    <!-- 增加考评信息 -->
+    <div class="adddiv" id="EvaluationForm">
+        <div class="text">新增考评信息</div>
+        <form class="form">
+                <p>考评序号</p>
+                <input type="text" name="" id="EvaluationId">
+                <p>考评成员编号</p>
+                <input type="text" name="" id="EvaluationMemberId">
+                <p>考评日期</p>
+                <input type="text" name="" id="EvaluationDate">
+                <p>考评成绩[百分制]</p>
+                <input type="text" name="" id="EvaluationGrade">
+                <p>备注</p>
+                <input type="text" name="" id="EvaluationNote">
+            </tr>
+            <div class="divisionLine"></div>
+        </form>
+        <button class="cancelButton" id="EvaluationcancelButton">取消</button>
+        <button class="submitButton" id="EvaluationsubmitButton">确定</button>
+    </div>
+    <!-- 修改考评信息 -->
+    <div class="modifydiv" id="modifyEvaluationForm">
+        <div class="text">修改考评信息</div>
+        <table>
+            <tr>
+                <td>考评序号</td>
+                <td><input type="text" id="modifyEvaluationId" /></td>
+            </tr>
+            <tr>
+                <td>考评成员编号</td>
+                <td><input type="text" id="modifyEvaluationMemberId" /></td>
+            </tr>
+            <tr>
+                <td>考评日期</td>
+                <td><input type="text" id="modifyEvaluationDate" /></td>
+            </tr>
+            <tr>
+                <td>考评成绩[百分制]</td>
+                <td><input type="text" id="modifyEvaluationGrade" /></td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td><input type="text" id="modifyEvaluationNote" /></td>
+            </tr>
+        </table>
+        <div class="divisionLine"></div>
+        <button class="cancelButton" id="ModifyEvaluationcancelButton">取消</button>
+        <button class="submitButton" id="ModifyEvaluationsubmitButton">确定</button>
+    </div>
+    <!-- 增加培训信息 -->
+    <div class="adddiv" id="TrainForm">
+        <div class="text">新增培训信息</div>
+        <form class="form">
+                <p>培训序号</p>
+                <input type="text" name="" id="TrainId">
+                <p>培训成员编号</p>
+                <input type="text" name="" id="TrainMemberId">
+                <p>培训日期</p>
+                <input type="text" name="" id="TrainDate">
+                <p>培训内容</p>
+                <input type="text" name="" id="TrainContent">
+                <p>备注</p>
+                <input type="text" name="" id="TrainNote">
+            </tr>
+            <div class="divisionLine"></div>
+        </form>
+        <button class="cancelButton" id="TraincancelButton">取消</button>
+        <button class="submitButton" id="TrainsubmitButton">确定</button>
+    </div>
+    <!-- 修改培训信息 -->
+    <div class="modifydiv" id="modifyTrainForm">
+        <div class="text">修改培训信息</div>
+        <table>
+            <tr>
+                <td>培训序号</td>
+                <td><input type="text" id="modifyTrainId" /></td>
+            </tr>
+            <tr>
+                <td>培训成员编号</td>
+                <td><input type="text" id="modifyTrainMemberId" /></td>
+            </tr>
+            <tr>
+                <td>培训日期</td>
+                <td><input type="text" id="modifyTrainDate" /></td>
+            </tr>
+            <tr>
+                <td>培训内容</td>
+                <td><input type="text" id="modifyETrainContent" /></td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td><input type="text" id="modifyTrainNote" /></td>
+            </tr>
+        </table>
+        <div class="divisionLine"></div>
+        <button class="cancelButton" id="ModifyTraincancelButton">取消</button>
+        <button class="submitButton" id="ModifyTrainsubmitButton">确定</button>
+    </div>
+    <!-- 增加业绩信息 -->
+    <div class="adddiv" id="AchievementForm">
+        <div class="text">新增业绩信息</div>
+        <form class="form">
+                <p>业绩序号</p>
+                <input type="text" name="" id="AchievementId">
+                <p>成员编号</p>
+                <input type="text" name="" id="AchievementMemberId">
+                <p>主要业绩</p>
+                <input type="text" name="" id="AchievementContent">
+                <p>备注</p>
+                <input type="text" name="" id="AchievementNote">
+            </tr>
+            <div class="divisionLine"></div>
+        </form>
+        <button class="cancelButton" id="AchievementcancelButton">取消</button>
+        <button class="submitButton" id="AchievementsubmitButton">确定</button>
+    </div>
+    <!-- 修改业绩信息 -->
+    <div class="modifydiv" id="modifyAchievementForm">
+        <div class="text">修改业绩信息</div>
+        <table>
+            <tr>
+                <td>业绩序号</td>
+                <td><input type="text" id="modifyAchievementId" /></td>
+            </tr>
+            <tr>
+                <td>成员编号</td>
+                <td><input type="text" id="modifyAchievementMemberId" /></td>
+            </tr>
+            <tr>
+                <td>主要业绩</td>
+                <td><input type="text" id="modifyAchievementContent" /></td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td><input type="text" id="modifyAchievementNote" /></td>
+            </tr>
+        </table>
+        <div class="divisionLine"></div>
+        <button class="cancelButton" id="ModifyAchievementcancelButton">取消</button>
+        <button class="submitButton" id="ModifyAchievementsubmitButton">确定</button>
+    </div>
+
+    <div class="decoration"></div>
+    <div class="Div">
+        <div class="navdiv">
+            <ul>
+                <li>
+                    <button id="CompanyInformationButton">公司基本信息</button>
+                </li>
+                <li>
+                    <button id="MemberInformationButton">成员信息</button>
+                </li>
+                <li>
+                    <button id="MemberRewardsButton">成员奖惩信息</button>
+                </li>
+                <li>
+                    <button id="MemberEvaluationButton">员工考评信息</button>
+                </li>
+                <li>
+                    <button id="MemberTrainButton">员工培训信息</button>
+                </li>
+                <li>
+                    <button id="MemberAchievementButton">员工业绩信息</button>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="tableDiv">
+            <!--公司基本信息表-->
+            <div id="CompanyInformation">
+                <button class="addButton" id="addCompanyButton">添加</button>
+                <table cellsoacing="0" class="table" id="Company">
+                    <thead>
+                        <tr>
+                            <th id="Company1">公司编号</th>
+                            <th id="Company2">公司名称</th>
+                            <th id="Company3">公司成立日期</th>
+                            <th id="Company4">备注</th>
+                            <th id="Company5">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <!--公司成员信息表-->
+            <div id="MemberInformation">
+            <button class="addButton" id="addMemberInformationButton">添加</button>
+            <table cellsoacing="0" class="table" id="Member">
+                <thead>
+                    <tr>
+                        <th id="MemberInformation1">成员编号</th>
+                        <th id="MemberInformation2">姓名</th>
+                        <th id="MemberInformation3">性别</th>
+                        <th id="MemberInformation4">角色</th>
+                        <th id="MemberInformation5">进团日期</th>
+                        <th id="MemberInformation6">备注</th>
+                        <th id="MemberInformation7">操作</th>
+                    </tr>
+                </thead>
+            </table>
+            </div>
+            <!--公司成员奖惩信息表-->
+            <div id="MemberRewards">
+                <button class="addButton" id="addMemberRewardsButton">添加</button>
+                <table cellsoacing="0" class="table" id="Rewards">
+                    <thead>
+                        <th id="MemberRewards1">奖惩序号</th>
+                        <th id="MemberRewards2">奖惩成员编号</th>
+                        <th id="MemberRewards3">奖惩日期</th>
+                        <th id="MemberRewards4">奖惩原因</th>
+                        <th id="MemberRewards5">备注</th>
+                        <th id="MemberRewards6">操作</th>
+                </thead>
+            </table>
+            </div>
+            <!--公司员工考评信息表-->
+            <div  id="MemberEvaluation">
+                <button class="addButton" id="addEvaluationButton">添加</button>
+                <table cellsoacing="0" class="table" id="Evaluation">
+                    <thead>
+                        <th id="MemberEvaluation1">考评序号</th>
+                        <th id="MemberEvaluation2">考评成员编号</th>
+                        <th id="MemberEvaluation3">考评日期</th>
+                        <th id="MemberEvaluation4">考评内容</th>
+                        <th id="MemberEvaluation5">考评结果</th>
+                        <th id="MemberEvaluation6">备注</th>
+                        <th id="MemberEvaluation7">操作</th>
+                    </thead>
+                </table>
+            </div>
+            <!--公司员工培训信息表-->
+            <div  id="MemberTrain">
+                <button class="addButton" id="addMemberTrainButton">添加</button>
+                <table cellsoacing="0" class="table" id="Train">
+                    <thead>
+                        <th id="MemberTrain1">培训序号</th>
+                        <th id="MemberTrain2">培训成员编号</th>
+                        <th id="MemberTrain3">培训日期</th>
+                        <th id="MemberTrain4">培训内容</th>
+                        <th id="MemberTrain5">备注</th>
+                        <th id="MemberTrain6">操作</th>
+                    </thead>
+                </table>
+            </div>
+    
+            <!--公司员工业绩信息表-->
+            <div  id="MemberAchievement">
+                <button class="addButton" id="addMemberAchievementButton">添加</button>
+                <table cellsoacing="0" class="table" id="Achievement">
+                    <thead>
+                        <th id="MemberAchievement1">业绩序号</th>
+                        <th id="MemberAchievement2">成员编号</th>
+                        <th id="MemberAchievement3">主要业绩</th>
+                        <th id="MemberAchievement4">备注</th>
+                        <th id="MemberAchievement5">操作</th>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <script src="js/System/table.js"></script>
+    <script src="js/System/Companyoperation.js"></script>
+    <script src="js/System/Memberoperation.js"></script>
+    <script src="js/System/Rewardsoperation.js"></script>
+    <script src="js/System/Evaluationoperation.js"></script>
+    <script src="js/System/Trainoperation.js"></script>
+    <script src="js/System/Achievementoperation.js"></script>
+    
+</body>
+</html>

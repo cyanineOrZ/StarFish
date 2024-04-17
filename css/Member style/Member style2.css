@@ -1,0 +1,80 @@
+*{
+	margin:0;
+	padding: 0;
+}
+	
+#main{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+#main .banner-slide{
+	position: absolute;
+	width: 100%;
+	height: 600px; 
+	overflow: hidden;
+	display:none;
+}
+#main .slide-active{
+	display: block;
+}
+
+#main .slide1{
+	background: fixed url(../../image/MemberStyle/MemberStyle2/1.jpg) no-repeat top center;
+}
+#main .slide2{
+	background: fixed url(../../image/MemberStyle/MemberStyle2/2.jpg) no-repeat top center;
+}
+#main .slide3{
+	background: fixed url(../../image/MemberStyle/MemberStyle2/3.jpg) no-repeat top center;
+}
+
+
+/*轮播圆点位置*/
+#main .dots #dots{
+	position: absolute;
+	left: calc(50% - 162.5px);
+	bottom: 20px;
+}
+/*轮播圆点样式*/
+#main .dots #dots li{
+	height: 15px;
+	width: 15px;
+	border-radius: 15px;
+	background: rgb(160, 159, 159);
+	float: left;
+	margin-left: 50px;
+	list-style: none;
+	user-select: none;
+	transition: all 0.5s;
+}
+/*当前图片圆点*/
+#main .dots #dots .li1{
+	background: rgb(56, 56, 56);
+}
+
+/*上一张按钮*/
+#main #left-right .move{
+	position: absolute;
+	margin-top:260px;
+	padding: 10px 0 15px 0;
+	width: 55px;
+	text-align: center;
+	font-size: 50px;/*设置<>大小*/
+	user-select: none;
+	background-color: rgba(170, 170, 170, 0.756);
+	transition: all 0.3s;
+}
+
+/*下一张按钮*/
+#main #left-right #next{
+	right:0;
+}
+/*鼠标悬停按钮时特效*/
+#main #left-right .move:hover{
+	background-color: rgba(255, 255, 255, 0.868);
+}
+	
+

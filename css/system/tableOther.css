@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*初始显示*/
+#Company{
+    display: block;
+}
+#MemberInformation{
+    display: none;
+}
+#MemberRewards {
+    display: none;
+}
+#MemberEvaluation {
+    display: none;
+}
+#MemberTrain {
+    display: none;
+}
+#MemberAchievement {
+    display: none;
+}
+
+
+/*表标题长度，同表和为920px*/
+/*Company*/
+#Company1 {
+    width: 200px;
+}
+#Company2 {
+    width: 200px;
+}
+#Company3 {
+    width: 200px;
+}
+#Company4 {
+    width: 200px;
+}
+#Company5 {
+    width: 100px;
+}
+
+
+
+/*MemberInformation*/
+#MemberInformation1 {
+    width: 100px;
+}
+#MemberInformation2 {
+    width: 100px;
+}
+#MemberInformation3 {
+    width: 100px;
+}
+#MemberInformation4 {
+    width: 120px;
+}
+#MemberInformation5 {
+    width: 150px;
+}
+#MemberInformation6 {
+    width: 200px;
+}
+#MemberInformation7 {
+    width: 100px;
+}
+
+/*MemberRewards*/
+#MemberRewards1 {
+    width: 100px;
+}
+#MemberRewards2 {
+    width: 120px;
+}
+#MemberRewards3 {
+    width: 150px;
+}
+#MemberRewards4 {
+    width: 200px;
+}
+#MemberRewards5 {
+    width: 200px;
+}
+#MemberRewards6 {
+    width: 100px;
+}
+
+/*MemberEvaluation*/
+#MemberEvaluation1 {
+    width: 100px;
+}
+#MemberEvaluation2 {
+    width: 140px;
+}   
+#MemberEvaluation3 {
+    width: 100px;
+}
+#MemberEvaluation4 {
+    width: 120px;
+}
+#MemberEvaluation5 {
+    width: 100px;
+}
+#MemberEvaluation6 {
+    width: 200px;
+}
+#MemberEvaluation7 {
+    width: 100px;
+}
+
+/*MemberTrain*/
+#MemberTrain1 {
+    width: 100px;
+}
+#MemberTrain2 {
+    width: 120px;
+}
+#MemberTrain3 {
+    width: 150px;
+}
+#MemberTrain4 {
+    width: 200px;
+}
+#MemberTrain5 {
+    width: 200px;
+}
+#MemberTrain6 {
+    width: 100px;
+}
+
+/*MemberAchievement*/
+#MemberAchievement1 {
+    width: 200px;
+}
+#MemberAchievement2 {
+    width: 200px;
+}
+#MemberAchievement3 {
+    width: 200px;
+}
+#MemberAchievement4 {
+    width: 200px;
+}
+#MemberAchievement5 {
+    width: 100px;
+}

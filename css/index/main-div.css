@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s;
+}
+
+.MainDiv {
+    display: block;
+    position: relative;
+    float: none;
+    width: 100%;
+    background: fixed url(../../image/index/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+object {
+    display: block;
+    width: 100%;
+}
+/*清除浮动*/
+.MainDiv::before,.MainDiv::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 0;
+    visibility: hidden;
+}
+
+.MainDiv-SideNav {
+    display: block;
+    position: relative;
+    float: left;
+    clear: both;
+    width: 160px;
+    left: 0;
+}
+
+.MainDiv-maindiv {
+    display: block;
+    position: relative;
+    overflow-y: hidden;
+    float: right;
+    border: 0.5px solid rgb(193, 193, 193);
+    width: calc(100% - 200px);
+    left: 0;
+    margin: 10px;
+    border-radius: 9px;
+    transition: all 0.3s
+}
+
+.backButton {
+    display: block;
+    position: absolute;
+    top: 10.8px;
+    left: -100px;
+    width: 98px;
+    height: 48px;
+    border: 1px solid white;
+    border-left: none;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background-color: rgba(128, 128, 128, 0.501);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: "宋体";
+    font-weight: 400;
+    transition: all 0.4s;
+    line-height: 48px;
+    z-index: 1;
+}
+.backButton:hover {
+    color: black;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.795);
+}

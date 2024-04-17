@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topDiv {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 62px;
+    padding: 10px 0;
+}
+
+
+/*顶部logo*/
+
+.logoDiv {
+    display: block;
+    position: absolute;
+    margin: 7px 0 0 0;
+    left: 118px;
+}
+
+
+/*顶部导航栏*/
+
+
+/*导航栏位置*/
+
+.topNavDiv {
+    display: block;
+    position: absolute;
+    top: 27.8px;
+    left: 540px;
+}
+
+.topNavDiv ul {
+    list-style-type: none;
+}
+
+
+/*清除浮动*/
+
+.topNavDiv>ul::before,
+.topNavDiv>ul::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.topNavDiv ul li {
+    float: left;
+    padding: 0 10px;
+}
+
+.topNavDiv ul li a {
+    display: block;
+    position: relative;
+    color: rgb(86, 86, 86);
+    font-size: 22px;
+    line-height: 26.4px;
+    text-align: center;
+    text-decoration: none;
+}
+.topDiv ul li:hover a {
+    color: #15a3f0;
+    transition: all ease 0.5s;
+}
+/*一级导航栏动画*/
+
+.topNavDiv ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 4px;
+    width: 100%;
+    background-color: #15a3f0;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform ease 0.5s;
+}
+
+.topNavDiv ul li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+
+/**/
+
+.KnowMore {
+    display: block;
+    width: 100%;
+}
+
+
+/**/
+
+.searchDiv {
+    display: block;
+    position: absolute;
+    color: gray;
+    top: 26.8px;
+    right: 196px;
+}
+
+.searchInputText {
+    width: 275px;
+    height: 28.4px;
+    padding: 2px 2px 2px 15px;
+    border: 1px solid gray;
+    font-size: 16px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.searchButton {
+    position: absolute;
+    top: 1px;
+    left: 212.8px;
+    width: 80px;
+    height: 32.6px;
+    padding: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 20px;
+    border-left: 0.4px solid rgb(118, 118, 118);
+    background-color: none;
+    font-size: 15px;
+}
+.searchButton:hover {
+    border: transparent;
+    transition: all ease 0.7s;
+    color: white;
+    background-color: #15a3f0;
+}
+
+
+/**/
+
+.shallButton {
+    display: block;
+    position: absolute;
+    top: 27.8px;
+    right: 118px;
+    transform: translateX(50%);
+    width: 100px;
+    height: 34.6px;
+    border: 0.3px solid gray;
+    border-radius: 20px;
+    line-height: 34.6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.shallButton:hover {
+    display: block;
+    border: transparent;
+    background-color: #15a3f0;
+    color: white;
+    transition: all ease 0.7s;
+}
+
+.ti {
+    display: block;
+    position: absolute;
+    width: 500px;
+    font-size: 40px;
+    font-weight: 700;
+}

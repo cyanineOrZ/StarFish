@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isad</title>
+    <link rel="stylesheet" href="css/index/top.css">
+    <link rel="stylesheet" href="css/login/top.css">
+    <link rel="stylesheet" href="css/index/main-div.css">
+    <link rel="stylesheet" href="css/index/SideNav.css">
+    <link rel="stylesheet" href="css/index/bottom.css">
+</head>
+<body>
+    <div class="topDiv">
+        <!---->
+        <div class="logoDiv">
+            <p class="ti">StarFish科技责任有限公司</p>
+        </div>
+        <!---->
+        <div class="topNavDiv">
+            <ul>
+                <li>
+                    <a href="index.html"></a>
+                </li>
+                <li>
+                    <a href="#Classical"></a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href="#KnowMore"></a>
+                </li>
+            </ul>
+        </div>
+        <!---->
+        <div class="searchDiv">
+            <form action="">
+                <input type="text" class="searchInputText" name="" id="" placeholder="输入您的内容">
+                <input type="submit" class="searchButton" name="" id="" value="搜索" onclick="alert('功能未完善')">
+            </form>
+        </div>
+        <div class="shallButton">
+            分享本站
+        </div>
+    </div>
+    <div class="MainDiv">
+        <div class="MainDiv-SideNav" id="MainDiv-SideNav">
+            <ul class="SideNav">
+                <li>
+                    <button id="System" onclick="javascript:System()">
+                        系统主控台
+                    </button>
+                    <script>
+                        function System() {
+                            document.getElementById("MainDiv-SideNav").style.left = -200 + "px";
+                            document.getElementById("viewDiv").style.left = -80 + "px";
+                            document.getElementById("backButton").style.left = 0 + "px";
+                            document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="System.html" width="100%" height="650px"></object>'
+                        }
+                    </script>
+                </li>
+                <li>
+                    <button id="new" onclick="javascript:Newopen()">
+                        团队新闻
+                    </button>
+                    <div class="content-div" id="content-div1">
+                        <ul>
+                            <li>
+                                <button href="#1" >公司成立</button>
+                            </li>
+                            <li>
+                                <button href="#2" >会前准备</button>
+                            </li>
+                            <li>
+                                <button href="">会中展开</button>
+                            </li>
+                            <li>
+                                <button href="">会后小结</button>
+                            </li>
+                            <li>
+                                <button href="">协同实验</button>
+                            </li>
+                            <li>
+                                <button href="">分工情况</button>
+                            </li>
+                            <li>
+                                <button href="">汇总情况</button>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="btn2">
+                        成员风采
+                    </button>
+                    <div class="content-div" id="content-div2">
+                        <ul>
+                            <li>
+                                <button id="MemberStyle1" onclick="javascript:MemberStyle1()">公司成立大会</button>
+                                <script>
+                                    function MemberStyle1() {
+                                        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="Member style1.html" width="100%" height="600px" bottom="0px"></object>';
+                                    }
+                                </script>
+                            </li>
+                            <li>
+                                <button id="MemberStyle2" onclick="javascript:MemberStyle2()">职务讨论会议</button>
+                                <script>
+                                    function MemberStyle2() {
+                                        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="Member style2.html" width="100%" height="600px" bottom="0px"></object>';
+                                    }
+                                </script>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="btn3">
+                        角色职责
+                    </button>
+                    <div class="content-div" id="content-div3">
+                        <ul>
+                            <li>
+                                <button href="">项目经理</button>
+                            </li>
+                            <li>
+                                <button href="">文档管理员</button>
+                            </li>
+                            <li>
+                                <button href="">调研分析师</button>
+                            </li>
+                            <li>
+                                <button href="">系统分析员</button>
+                            </li>
+                            <li>
+                                <button href="">模块设计员</button>
+                            </li>
+                            <li>
+                                <button href="">程序员</button>
+                            </li>
+                            <li>
+                                <button href="">美工设计员</button>
+                            </li>
+                            <li>
+                                <button href="">测试工程师</button>
+                            </li>
+                            <li>
+                                <button href="">硬件工程师</button>
+                            </li>
+                            <li>
+                                <button href="">数据库管理员</button>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="btn4" onclick="javascript:MemberFile()">
+                        成员档案
+                    </button>
+                    <div class="content-div" id="content-div4">
+                        <ul>
+                            <li>
+                                <button href="">心得体会</button>
+                            </li>
+                            <li>
+                                <button href="">心得体会</button>
+                            </li>
+                            <li>
+                                <button href="">心得体会</button>
+                            </li>
+                            <li>
+                                <button href="">心得体会</button>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="btn5">
+                        知识分享
+                    </button>
+                    <div class="content-div" id="content-div5">
+                        <ul>
+                            <li>
+                                <button href="">第1章知识分享</button>
+                            </li>
+                            <li>
+                                <button href="">第2章知识分享</button>
+                            </li>
+                            <li>
+                                <button href="">第3章知识分享</button>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button>
+                        本团的云
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="MainDiv-maindiv" id="viewDiv">
+            
+        </div>
+        <button class="backButton" id="backButton" onclick="javascript:back()">
+            返回主界面
+        </button>
+        <script>
+            function back() {
+                document.getElementById("MainDiv-SideNav").style.left = 0 + "px";
+                document.getElementById("viewDiv").style.left = 0 + "px";
+                document.getElementById("backButton").style.left = -100 + "px";
+            }
+        </script>
+    </div>
+    
+
+
+    <div class="BottomDiv">
+    </div>
+    <script src="js/index/nav.js"></script>
+</body>
+</html>

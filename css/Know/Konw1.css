@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.DIV {
+    display: block;
+    width: 100%;
+    height: 800px;
+}
+.condiv {
+    display: block;
+    position: relative;
+    width: 15%;
+    height: 150px;
+    margin: 50px;
+    background-color: rgba(189, 189, 189, 0.479);
+    border-radius: 10px;
+    border: 1px solid gray;
+    transition: ease all 0.5s;
+}
+.button {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: calc(50% - 25px);
+    left: calc(50% - 75px);
+    background-color: white;
+    font-family: "微软雅黑";
+    font-size: 22px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    transition: ease all 0.5s;
+}
+.button:hover {
+    background-color: darkturquoise;
+    border: transparent;
+    transition: ease all 0.5s;
+}

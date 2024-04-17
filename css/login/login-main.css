@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.backgroundImg {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 850px;
+    background: fixed url(../../image/index/bg.jpg) no-repeat center center;
+}
+.textDiv {
+    display: block;
+    position: relative;
+    width: 700px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 150px 0 0 700px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px 2px;
+}
+.textDiv::before,.textDiv::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.mobileDiv {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    width: 350px;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+    background: fixed url(../../image/index/bg.jpg) no-repeat center;
+    transition: all ease 0.5s;
+    z-index: 1;
+}
+.button {
+    display: block;
+    position: relative;
+    margin: 225px 0 0 50px;
+    width: 250px;
+    height: 50px;
+    border: #15a3f0;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-family: "微软雅黑";
+    transform: translate(-50% -50%);
+    z-index: 3;
+    transition: all ease 0.3s;
+}
+.button:hover {
+    background-color: #15a3f0;
+    color: white;
+    transition: all ease 0.3s;
+}
+.buttonText {
+    display: block;
+    font-size: 16px;
+}
+
+
+.Logintitle {
+    margin: 90px 0 30px 132px;
+    font-size: 36px;
+    color: black;
+}
+.Registetitle {
+    margin: 60px 0 30px 132px;
+    font-size: 36px;
+    color: black;
+}
+
+
+
+.loginDiv {
+    display: block;
+    float: left;
+    visibility: visible;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+}
+.registerDiv {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.userAccount {
+    display: block;
+    height: 30px;
+    width: 200px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 0.5px solid gray;
+    margin: 0 auto;
+    font-size: 16px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.userPassWord {
+    display: block;
+    height: 30px;
+    width: 200px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 0.5px solid gray;
+    margin: 30px auto 15px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.Registemargin {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.complaintDiv {
+    display: block;
+    width: 240px;
+    margin: 0 auto;
+}
+.complaintDiv div a {
+    color: black;
+    text-decoration: none;
+}
+.complaintDiv div a:hover {
+    color: #15a3f0;
+}
+.complaintDiv::before,.complaintDiv::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.complaintDiv-left {
+    display: block;
+    float: left;
+}
+.complaintDiv-right {
+    display: block;
+    float: right;
+}
+
+.Submitbutton {
+    display: block;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: 0.5px solid gray;
+    margin: 15px auto;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    outline: none;
+    transition: all ease 0.3s;
+}
+.Submitbutton:hover {
+    background-color: #15a3f0;
+    color: white;
+    transition: all ease 0.3s;
+}
